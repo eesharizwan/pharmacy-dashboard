@@ -24,3 +24,9 @@ All charts include 3-month forecasts using linear regression.
 - **Data** — pandas, openpyxl (used offline to parse Excel into static JSON)
 - **Forecasting** — linear regression computed client-side in JavaScript
 - **Deployment** - Vercel
+
+## Key decisions
+
+- **Static data instead of live upload** — data is pre-parsed at build time so no backend is needed in production, keeping the app fast and secure
+- **Linear forecasting** — simple but effective 3-month projections based on trailing trend, computed entirely in the browser
+- **Modular architecture** — each analytics project is an isolated component that receives the same data object, making it easy to add new modules

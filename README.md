@@ -23,4 +23,4 @@ All charts include 3-month forecasts using linear regression.
 - **Frontend** — React, Vite, Chart.js
 - **Data** — pandas, openpyxl (used offline to parse Excel into static JSON)
 - **Forecasting** — linear regression computed client-side in JavaScript
-- **Deploymen
+- **Deployment

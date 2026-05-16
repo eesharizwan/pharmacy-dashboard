@@ -1,0 +1,31 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: #f5f5f5; color: #1a1a1a; }
+.app { max-width: 1200px; margin: 0 auto; padding: 24px; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; background: white; padding: 20px 24px; border-radius: 12px; border: 1px solid #e5e5e5; }
+.header h1 { font-size: 20px; font-weight: 600; }
+.subtitle { font-size: 13px; color: #666; margin-top: 4px; }
+.upload-btn { background: #1a1a1a; color: white; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 500; }
+.upload-btn:hover { background: #333; }
+.error { background: #fff0f0; border: 1px solid #ffcccc; color: #cc0000; padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; }
+.empty { background: white; border: 2px dashed #ddd; border-radius: 12px; padding: 80px; text-align: center; color: #999; font-size: 15px; }
+.tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.tab { padding: 8px 18px; border-radius: 20px; border: 1px solid #ddd; background: white; cursor: pointer; font-size: 13px; color: #555; }
+.tab:hover { background: #f0f0f0; }
+.tab.active { background: #1a1a1a; color: white; border-color: #1a1a1a; }
+.content { background: white; border-radius: 12px; border: 1px solid #e5e5e5; padding: 24px; }
+.module-title { font-size: 17px; font-weight: 600; margin-bottom: 4px; }
+.module-sub { font-size: 13px; color: #666; margin-bottom: 24px; }
+.kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 28px; }
+.kpi { background: #f9f9f9; border-radius: 8px; padding: 14px 16px; border: 1px solid #eee; }
+.kpi-label { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+.kpi-value { font-size: 22px; font-weight: 600; }
+.kpi-value.green { color: #15803d; }
+.kpi-value.red { color: #dc2626; }
+.kpi-value.amber { color: #b45309; }
+.chart-wrap { position: relative; width: 100%; }
+.section-label { font-size: 12px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.05em; margin: 24px 0 12px; }
+.alert { padding: 10px 14px; border-radius: 8px; font-size: 13px; margin-bottom: 8px; }
+.alert.warn { background: #fffbeb; border: 1px solid #fcd34d; color: #92400e; }
+.alert.danger { background: #fff0f0; border: 1px solid #fca5a5; color: #991b1b; }
+.alert.good { background: #f0fdf4; border: 1px solid #86efac; color: #166534; }
+.badge { background: #1a1a1a; color: white; padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 500; }

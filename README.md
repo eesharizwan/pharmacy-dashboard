@@ -4,7 +4,7 @@ A pharmacy financial analytics platform built with React and Chart.js — powere
 
 ## Live demo
 
-[Coming soon — deploying to Vercel]
+https://pharmacydashboard-delta.vercel.app
 
 ## What it does
 

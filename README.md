@@ -1,10 +1,14 @@
 # Pharmacy Analytics Dashboard
 
-A full-stack analytics platform for pharmacy P&L data built with FastAPI and React.
+A pharmacy financial analytics platform built with React and Chart.js — powered by 50 months of real P&L data.
+
+## Live demo
+
+[Coming soon — deploying to Vercel]
 
 ## What it does
 
-Upload a monthly Excel P&L file and instantly get 5 analytics modules:
+Five analytics modules built on real pharmacy data from Oct 2022 to Jan 2026:
 
 - **Discount & leakage analysis** — tracks where gross sales bleed away before becoming net revenue
 - **Profit forecast** — historical trends with 3-month linear forecasting and loss-month alerts
@@ -12,31 +16,11 @@ Upload a monthly Excel P&L file and instantly get 5 analytics modules:
 - **Expense ratio monitor** — tracks costs as a % of net sales with forward projections
 - **Margin deep dive** — gross and net margin trends with cost-of-sales breakdown
 
+All charts include 3-month forecasts using linear regression.
+
 ## Tech stack
 
-- **Backend** — Python, FastAPI, pandas, openpyxl
 - **Frontend** — React, Vite, Chart.js
-- **Forecasting** — linear regression computed client-side
-
-## How to run locally
-
-### Backend
-```bash
-cd backend
-python3 -m venv venv
-source venv/bin/activate
-pip install fastapi uvicorn pandas openpyxl python-multipart
-uvicorn main:app --reload
-```
-
-### Frontend
-```bash
-cd frontend
-nvm use 20
-npm install
-npm run dev
-```
-
-Then open `http://localhost:5173` and upload your Excel file.
-
-## Project structure
+- **Data** — pandas, openpyxl (used offline to parse Excel into static JSON)
+- **Forecasting** — linear regression computed client-side in JavaScript
+- **Deploymen
